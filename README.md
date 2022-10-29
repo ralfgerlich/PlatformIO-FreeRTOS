@@ -18,7 +18,7 @@ PlatformIO Wrapper for FreeRTOS
 ## Usage
 Under your global environment, add the library to ```lib_deps```, using either the string **"PlatformIO-FreeRTOS"** or by using the GitHub URL. If using the URL make sure that submodules are cloned recursively.
 
-Alternatively, simply add the library to the ```libs``` folder in your PlatformIO project. The library handles configuring FreeRTOS for your microcontroller's architecture. By default this library wrapper defaults to using ```heap_4.c``` as the FreeRTOS dynamic memory allocation scheme.
+Alternatively, simply add the library to the ```libs``` folder in your PlatformIO project. The library handles configuring FreeRTOS for your microcontroller's architecture. By default this library wrapper defaults to not including any of the FreeRTOS dynamic memory allocation scheme.
 
 Note that the library expects there to be a ```FreeRTOSConfig.h``` file located somewhere in your `includePath`. IF the config file is not present, compilation will fail!
 

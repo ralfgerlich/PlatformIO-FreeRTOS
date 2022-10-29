@@ -169,7 +169,6 @@ else:
     env.Replace(SRC_FILTER=[
             "+<FreeRTOS-Kernel/>",
             "-<FreeRTOS-Kernel/portable/>",
-            "+<FreeRTOS-Kernel/portable/MemMang/heap_4.c>",
             os.path.join("+<FreeRTOS-Kernel/portable/GCC/", devices[port[0]], ">")
         ])
     # FreeRTOSConfig.h is located in the project space, outside of the lib:
